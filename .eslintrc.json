@@ -14,19 +14,19 @@
     {
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
       "rules": {
-        "simple-import-sort/imports": [
-          "warn",
-          {
-            "groups": [
-              ["^react", "^@?\\w"],
-              ["^(@|components)(/.*|$)"],
-              ["^\\u0000"],
-              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
-              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
-              ["^.+\\.?(css)$"]
-            ]
-          }
-        ]
+//        "simple-import-sort/imports": [
+//          "warn",
+//          {
+//            "groups": [
+//              ["^react", "^@?\\w"],
+//              ["^(@|components)(/.*|$)"],
+//              ["^\\u0000"],
+//              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+//              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+//              ["^.+\\.?(css)$"]
+//            ]
+//          }
+//        ]
       }
     }
   ],
@@ -37,12 +37,12 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint",
-    "simple-import-sort"
+    "@typescript-eslint"
+//    "simple-import-sort"
   ],
   "rules": {
-    "simple-import-sort/exports": "warn",
-    "simple-import-sort/imports": "warn",
+//    "simple-import-sort/exports": "warn",
+//    "simple-import-sort/imports": "warn",
     "@typescript-eslint/no-empty-interface": [
       "error",
       {
