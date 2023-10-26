@@ -1,11 +1,11 @@
 'use client';
 import React, { useContext } from 'react';
-import Link from 'next/link';
-import { CartContext } from '@app/context/shopContext';
 import DashboardCart from '@app/components/dashboard-cart/dashboard-cart.components';
+import { CartContext } from '@app/context/shopContext';
+import Link from 'next/link';
 
 function Header() {
-  const { cart, cartOpen, setCartOpen } = useContext(CartContext);
+  const { cart, setCartOpen } = useContext(CartContext);
 
   return (
     <header className='border-b sticky top-0 z-20 bg-white'>

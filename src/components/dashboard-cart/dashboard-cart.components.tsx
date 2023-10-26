@@ -1,8 +1,8 @@
-import { Fragment, useContext, useState } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
-import Image from 'next/image';
+import { Fragment, useContext } from 'react';
 import { CartContext } from '@app/context/shopContext';
 import { formatter } from '@app/utils/helpers';
+import { Dialog, Transition } from '@headlessui/react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function DashboardCart({ cart }: any) {
